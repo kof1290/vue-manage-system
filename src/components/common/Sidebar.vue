@@ -2,6 +2,7 @@
     <div class="sidebar">
         <el-menu class="sidebar-el-menu" :default-active="onRoutes" :collapse="collapse" background-color="#324157"
             text-color="#bfcbd9" active-text-color="#20a0ff" unique-opened router>
+            <!--router表示使用 vue-router 的模式，启用该模式会在激活导航时以 index 作为 path 进行路由跳转-->
             <template v-for="item in items">
                 <template v-if="item.subs">
                     <el-submenu :index="item.index" :key="item.index">
